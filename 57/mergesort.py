@@ -34,12 +34,7 @@ def mergeSort(arr, first, last, tmp, rects):
 	update_plot(arr, first, last, rects)
 
 def update_plot(arr, first, last, rects):
-	if first == last:
-		print(str(last) + " " + str(first))
-		color = 'k'
-	else:
-		print(str(last) + " " + str(first))
-		color = colors[int(math.log(last-first,2))]
+	color = colors[int(math.log(last-first,2))]
 	for x in range(first, last):
 		rects[x].set_height(arr[x])
 		rects[x].set_facecolor(color)
