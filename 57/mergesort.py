@@ -2,7 +2,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 matplotlib.use('TKAgg')
 import numpy as np
-import time, random,math
+import time, random, math
 
 size=32
 
@@ -43,7 +43,7 @@ def update_plot(arr, first, last, rects):
 
 def animated_barplot():
 	width = 1
-	rects = plt.bar(range(size), array, width, align = 'center', color=colors[len(colors) - int(math.log(size)) + 1])
+	rects = plt.bar(range(size), array, width, align = 'center', color='k')
 	plt.title("Merge Sort")
 	plt.xlabel("Index")
 	plt.tick_params(axis='both', labelbottom='off', labeltop='off', top='off', labelleft='off', left='off', labelright='off', right='off')
